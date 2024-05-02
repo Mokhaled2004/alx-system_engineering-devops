@@ -40,8 +40,8 @@ frontend clickviral-tech-frontend
 
 backend clickviral-tech-backend
     balance roundrobin
-    server 151666-web-01 100.25.190.21:80 check
-    server 151666-web-02 54.160.77.90:80 check
+    server 487905-web-01 3.90.85.67:80 check
+    server 487905-web-02 35.174.211.181:80 check
 "
 
 # shellcheck disable=SC2154
@@ -56,4 +56,4 @@ if [ "$(pgrep -c haproxy)" -le 0 ]; then
 	sudo service haproxy start
 else
 	sudo service haproxy restart
-fi
+ifi
